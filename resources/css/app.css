@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ReactModal__Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+.ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent black */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-header {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    font-size: 72px; /* Sets the font size */
+    height: 150px; /* Set a height for the header (adjust as needed) */
+    text-align: center; /* Centers text horizontally for block-level elements or text content */
+}
+
+
+
+.video-iframe {
+    width: 100%; /* Responsive width */
+    min-width: 560px; /* Maximum width */
+    min-height: 315px; /* Set height */
+}
+
+.close-modal-button {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #ff4d4d; /* Red color for visibility */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Aligns items horizontally to the center */
+    align-items: center; /* Aligns items vertically to the center */
+    gap: 10px; /* Optional: Adds space between buttons */
+
+}
+
+
+.gr-button, .sw-button, .ob-button {
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border: 5px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    text-shadow: 2px 2px 4px black;
+}
+
+
+.gr-button{
+    background-image: url('../images/earth.jpg');
+    height:500px;
+    width:500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.ob-button{
+    background-image: url('../images/obstacles.png');
+    height:500px;
+    width:500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sw-button{
+    background-image: url('../images/selflove.png');
+    height:500px;
+    width:500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
